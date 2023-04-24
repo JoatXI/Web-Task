@@ -79,17 +79,13 @@ nav ul li a:hover {
 .banner h2 {
   color: #ffffff;
   text-align: center;
-  font-family: 'Brono Ace', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Bruno Ace', cursive;
 }
 
 
 .banner img {
-  top: 0;
-  left: 0;
   width: auto;
   height: auto;
-  object-fit: cover;
-  z-index: -1;
   opacity: 80%;
 }
 
@@ -99,12 +95,12 @@ nav ul li a:hover {
 }
 
 .top-text {
-  font-size: 120px;
+  font-size: 100px;
   display: block;
 }
 
 .bottom-text {
-  font-size: 120px;
+  font-size: 100px;
   display: block;
 }
 
