@@ -28,7 +28,7 @@ body {
   }
 
 h1 {
-  color: #04768a;
+  color: #e7e7e7;
 	text-decoration: none;
 	font-size: 25px;
 	padding: 0 5px;
@@ -36,7 +36,7 @@ h1 {
 	transition: all 0.3s ease-in-out;
 }
 
-a {
+h1 a {
     text-decoration: none;
     color: #e7e7e7;
 }
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #044b6c;
+	color: #04ddfb;
 }
 
 .banner {
