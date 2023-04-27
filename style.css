@@ -175,7 +175,8 @@ footer {
 
 .lineup-wrapper  h2 {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 50px;
+  text-align: center;
   font-family: "Bruno Ace", cursive;
   margin: 60px 25px;
 }
