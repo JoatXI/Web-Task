@@ -103,3 +103,29 @@ nav ul li a:hover {
   display: block;
 }
 
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links h3 {
+  margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f8c900;
+}
