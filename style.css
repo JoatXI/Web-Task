@@ -81,8 +81,8 @@ nav ul li a:hover {
   color: #ffffff;
   text-align: center;
   font-family: "Bruno Ace", cursive;
-  margin-bottom: -4%;
 }
+
 
 
 .banner img {
@@ -160,3 +160,22 @@ footer {
   border-radius: 3px;
 }
 
+.lineup-wrapper {
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #aed3d6;
+}
+
+.lineup-wrapper .lineup-text {
+  width: 80%;
+  margin: 60px;
+}
+
+.lineup-wrapper  h2 {
+  color: #ffffff;
+  font-size: 35px;
+  font-family: "Bruno Ace", cursive;
+  margin: 60px 25px;
+}
