@@ -71,6 +71,7 @@ nav ul li a:hover {
   justify-content: center;
   padding: 5px 0;
   margin: 5px 0;
+  border-bottom: 1px solid #aed3d6;
 }
 
 .banner h2 {
@@ -129,3 +130,27 @@ footer {
 .footer-links a:hover {
   color: #f8c900;
 }
+
+.stages-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.stages-wrapper h2 {
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 1em;
+}
+
+.stages-wrapper .stages-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stages-wrapper .stages-images img{
+  width: 30%;
+  margin: 0 1em;
+}
+
