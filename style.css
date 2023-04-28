@@ -81,15 +81,13 @@ nav ul li a:hover {
   color: #ffffff;
   text-align: center;
   font-family: "Bruno Ace", cursive;
+  border: 1px solid red;
 }
 
-
-
 .banner img {
-  width: 50%;
-  height: 50%;
+  width: 80%;
   opacity: 80%;
-  margin-top: -4%;
+  margin-top: -15%;
 }
 
 .prefix {
