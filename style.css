@@ -69,10 +69,11 @@ nav ul li a:hover {
 
 .banner {
   text-align: center;
-  position: relative; /* needed for absolute positioning */
+  position: relative;
   border-bottom: 1px solid #aed3d6;
   display: flex;
   justify-content: center;
+  margin: 50px;
 }
 
 .banner h2 {
@@ -83,14 +84,14 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* needed for z-index */
-  z-index: 1; /* needed for stacking order */
+  position: relative;
+  z-index: 1;
   width: 80%;
 }
 
 .banner img {
   display: block;
-  max-width: 65%;
+  max-width: 70%;
   height: auto;
   margin-top: -9%;
 }
@@ -101,17 +102,17 @@ nav ul li a:hover {
 }
 
 .top-text {
-  font-size: 80px;
+  font-size: 70px;
   display: block;
 }
 
 .bottom-text {
-  font-size: 80px;
+  font-size: 70px;
   display: block;
 }
 .banner .suffix {
   position: absolute;
-  top: 23%;
+  top: 21%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
@@ -175,11 +176,11 @@ footer {
 }
 
 .lineup-wrapper {
-  margin: 80px auto;
+  margin: 5px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #aed3d6;
+  border-bottom: 1px solid #aed3d6;
 }
 
 .lineup-wrapper .lineup-text {
