@@ -201,28 +201,42 @@ footer {
   }
 
   .lineup h2 {
-    font-size: 20px;
-    margin: 0;
+    font-size: 15px;
+  }
+
+  .lineup .lineup-text {
+    width: 100%;
+    margin: 40px;
   }
 
   .banner {
     margin: 0;
+    margin-top: 30px;
+  }
+  .banner img {
+    display: block;
+    max-width: 120%;
+    height: auto;
+    margin-top: -18%;
   }
 
   .prefix {
-    font-size: 5px;
+    font-size: 15px;
   }
 
   .top-text {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .bottom-text {
-    font-size: 20px;
+    font-size: 30px;
   }
 
-  .suffix {
-    font-size: 20px;
+  .banner .suffix {
+    top: 25%;
+    left: 50%;
+    font-size: 13px;
+    position: absolute;
   }
 
   nav {
