@@ -186,7 +186,7 @@ footer {
   margin: 60px;
 }
 
-.lineup  h2 {
+.lineup h2 {
   color: #ffffff;
   font-size: 50px;
   text-align: center;
@@ -198,6 +198,31 @@ footer {
 @media screen and (max-width: 480px) {
   .row {
     flex-direction: column;
+  }
+
+  .lineup h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .prefix {
+    font-size: 5px;
+  }
+
+  .top-text {
+    font-size: 20px;
+  }
+
+  .bottom-text {
+    font-size: 20px;
+  }
+
+  .suffix {
+    font-size: 20px;
   }
 
   nav {
