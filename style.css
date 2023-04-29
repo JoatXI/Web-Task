@@ -31,6 +31,7 @@ h1 a {
 
 nav {
 	display: flex;
+  flex-direction: row;
 }
 
 nav a {
@@ -44,6 +45,23 @@ nav a {
 
 nav a:hover {
 	color: #04ddfb;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+  font-family: "Bruno Ace", cursive;
+  color: #ffffff;
 }
 
 .banner {
@@ -129,12 +147,12 @@ footer {
   color: #f8c900;
 }
 
-.stages-wrapper {
+.stages {
   width: 80%;
   margin: 80px auto;
 }
 
-.stages-wrapper h2 {
+.stages h2 {
   color: #ffffff;
   font-size: 35px;
   font-family: "Bruno Ace", cursive;
@@ -142,20 +160,20 @@ footer {
   text-shadow: 0.5px 0.5px 1px black;
 }
 
-.stages-wrapper .stages-images {
+.stages .stages-images {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.stages-wrapper .stages-images img{
+.stages .stages-images img{
   width: 30%;
   margin: 0 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
 
-.lineup-wrapper {
+.lineup {
   margin: 5px auto;
   display: flex;
   justify-content: center;
@@ -163,16 +181,49 @@ footer {
   border-bottom: 1px solid #aed3d6;
 }
 
-.lineup-wrapper .lineup-text {
+.lineup .lineup-text {
   width: 80%;
   margin: 60px;
 }
 
-.lineup-wrapper  h2 {
+.lineup  h2 {
   color: #ffffff;
   font-size: 50px;
   text-align: center;
   font-family: "Bruno Ace", cursive;
   margin: 60px 25px;
   text-shadow: 0.5px 0.5px 1px black;
+}
+
+@media screen and (max-width: 480px) {
+  .row {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 59px;
+    right: 0;
+    width: 50%;
+    background-color: #043a45;
+    opacity: 80%;
+    z-index: 1;
+    flex-direction: column;
+  }
+  nav a {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #aed3d6;
+  }
+  #menu-toggle:checked + #menu-icon {
+    color: #ffffff;
+  }
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+  #menu-icon {
+    display: block;
+  }
 }
