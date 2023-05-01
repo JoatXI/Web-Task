@@ -245,6 +245,27 @@ nav a:hover {
   align-items: center;
   background-color: #d3d3d3;
   margin-top: 2vh;
+  padding-bottom: 5vh;
+}
+
+.contact-topic {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 5.5vh;
+  margin: 0;
+}
+
+.contact-text {
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+  width: 90%;
+}
+
+.form-text {
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+  width: 90%;
 }
 
 footer {

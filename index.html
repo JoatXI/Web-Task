@@ -96,33 +96,35 @@
         </div>
 
         <div class="contact" id="contact">
-            <form action="contact.html" method="get">
+            <h1 class="contact-topic">CONTACT US</h1>
+            <h2 class="contact-text">To contact us, send us a message:</h2>
+            <form class="form-text" action="contact.html" method="get">
                 <div>
-                    <label>Name</label>
-                    <input>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Name">
                 </div>
                 <div>
-                    <label>Email</label>
-                    <input>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="Email">
                 </div>
                 <div>
-                    <label>Subject</label>
-                    <input>
+                    <label for="subject"></label>
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
                 <div>
-                    <label>Message</label>
-                    <input>
+                    <label for="message"></label>
+                    <input name="message" placeholder="Message">
                 </div>
-                <button>Send</button>
+                <button type="submit">Send</button>
             </form>
         </div>
     </div>
 
     <footer>
         <div class="footer-links">
-            <h3><a href="#">FAQ</a></h3>
-            <h3><a href="#">CONTACT US</a></h3>
-            <h3><a href="#">EVENT LINEUPS</a></h3>
+            <h3><a href="#faq">FAQ</a></h3>
+            <h3><a href="#contact">CONTACT US</a></h3>
+            <h3><a href="#lineup">EVENT LINEUPS</a></h3>
         </div>
     </footer>
 </body>
