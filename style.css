@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #00bdd0;
+body, html {
+  height: 100%;
+  line-height: 1.8;  
+  
   margin: 0;
 }
 
@@ -13,14 +15,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #043a45;
+  background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 10px 0px, rgba(0, 0, 0, 0.4) 0px 2px 4px -1px;
 }
 
 h1 {
   font-size: 2.4vh;
-  color: #e7e7e7;
+  
   font-family: "Bruno Ace", cursive;
   font-weight: bold;
   margin: 0 1.25rem;
@@ -28,7 +29,7 @@ h1 {
 
 h1 a {
   text-decoration: none;
-  color: #e7e7e7;
+  color: #000;
 }
 
 nav {
@@ -37,21 +38,16 @@ nav {
 }
 
 nav a {
-	color: #fbfcfe;
 	text-decoration: none;
 	font-size: 0.938rem;
   font-family: "Bruno Ace", cursive;
 	letter-spacing: 0.063rem;
 	margin: 0 1.6rem;
+  color: #000;
 }
 
 nav a:hover {
 	color: #04ddfb;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 #menu-toggle {
@@ -63,41 +59,16 @@ nav a:hover {
   font-size: 25px;
   display: none;
   font-family: "Bruno Ace", cursive;
-  color: #ffffff;
-}
-
-.lineup {
-  display: flex;
-  flex: auto;
-  margin: 5px auto;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #aed3d6;
-  border: 1px solid red;
-  margin: 2.9vh;
-}
-
-.lineup .lineup-text {
-  width: 80%;
-}
-
-.lineup h2 {
-  color: #ffffff;
-  font-size: 5vh;
-  text-align: center;
-  font-family: "Bruno Ace", cursive;
-  margin: 60px 25px;
-  font-weight: bold;
 }
 
 .banner {
+  background-image: url(images/pitcrew.jpg);
+  background-position: center;
+  min-height: 100%;
   display: block;
   flex: auto;
   text-align: center;
-  border-bottom: 1px solid #aed3d6;
   justify-content: center;
-  border: 1px solid red;
-  margin: 2.9vh;
 }
 
 .banner h2 {
@@ -109,12 +80,12 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  margin: 5vh;
 }
 
 .prefix {
   font-size: 2vh;
   display: block;
+  margin-top: 15vh;
 }
 
 .top-text {
@@ -132,34 +103,77 @@ nav a:hover {
   display: block;  
 }
 
-.stages {
-  display: block;
-  flex: auto;
-  border: 1px solid red;
-  margin: 2.9vh;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vh;
 }
 
-.stages h2 {
+.lineup {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00bdd0;
+}
+
+.lineup-topic {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  color: #ffff;
+  font-size: 5.5vh;
+  margin: 0;
+}
+
+.lineup-text {
+  width: 80%;
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 5vh;
+  text-align: center;
   font-family: "Bruno Ace", cursive;
+  margin: 60px 25px;
   font-weight: bold;
-  margin: 3vh 2.9vh;
-  text-align: left;
+}
+
+.stages-container {
+  display: block;
+  flex: auto;
+  background-color: #1a1a1a;
+  margin-top: 2vh;
+}
+
+.stages {
+  margin: 10vh;
+}
+
+.stages-topic {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  color: #ffff;
+  font-size: 5.5vh;
+  margin: 0;
+}
+
+.stages-container h2 {
+  color: #ffffff;
+  font-size: 3vh;
+  font-family: 'Kanit', sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 .stages-images {
   display: flex;
-  flex-direction: column;
   flex: auto;
-  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.stages img{
+.stages-container img{
   width: 30%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  margin: 2.9vh;
 }
 
 footer {
@@ -258,6 +272,24 @@ footer {
 
   .banner .suffix {
     font-size: 13px;
+  }
+
+  .stages-container {
+    display: block;
+    flex: auto;
+  }
+
+  .stages-images {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stages-images img {
+    display: block;
+    width: 100%;
   }
 
   #menu-toggle:checked + #menu-icon {
