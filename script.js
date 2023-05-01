@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) => {
 });
 
 function checkInputs() {
-    // getting the values from the inputs
+    // getting the values from the inputs..
     const nameValue = name.value.trim();
     const emailValue = email.value.trim();
     const subjectValue = subject.value.trim();
