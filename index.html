@@ -98,24 +98,32 @@
         <div class="contact" id="contact">
             <h1 class="contact-topic">CONTACT US</h1>
             <h2 class="contact-text">To contact us, send us a message:</h2>
-            <form class="form-text" action="contact.html" method="get">
-                <div>
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Name">
+            <div id="error"></div>
+            <form class="form-text" id="form" action="/" method="get">
+                <div class="form-box">
+                    <label for="name">Name</label>
+                    <input class="name-input" type="text" name="name" id="name" placeholder=" Enter your name">
+                    <small>Error message!</small>
                 </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" name="email" placeholder="Email">
+                <br>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input class="email-input" type="email" name="email" id="email" placeholder=" example@gmail.com">
+                    <small>Error message!</small>
                 </div>
-                <div>
-                    <label for="subject"></label>
-                    <input type="text" name="subject" placeholder="Subject">
+                <br>
+                <div class="form-box">
+                    <label for="subject">Subject</label>
+                    <input class="subject-input" type="text" name="subject" id="subject" placeholder=" Enter message subject">
+                    <small>Error message!</small>
                 </div>
-                <div>
-                    <label for="message"></label>
-                    <input name="message" placeholder="Message">
+                <br>
+                <div class="form-box">
+                    <label for="message">Message</label>
+                    <textarea class="message-input" name="message" id="message" placeholder=" Type your message here.."></textarea>
+                    <small>Error message!</small>
                 </div>
-                <button type="submit">Send</button>
+                <button class="submit-button" type="submit">SEND</button>
             </form>
         </div>
     </div>
@@ -127,5 +135,6 @@
             <h3><a href="#lineup">EVENT LINEUPS</a></h3>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
