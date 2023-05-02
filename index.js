@@ -3,25 +3,24 @@ const sqlite3 = require('sqlite3').verbose();
 // open the database
 let db = new sqlite3.Database('./mydatabase.db');
 
-// run an SQL query to retrieve the data
-db.all('SELECT * FROM lineup', [], (err, rows) => {
+
+const query = "SELECT * FROM lineup";
+db.all(query, (err, rows) => {
   if (err) {
-    throw err;
+    console.log(err);
+  } else {
+    console.log(rows);
   }
-  // pass the retrieved data to your HTML or template engine for rendering
-  console.log(rows);
 });
 
-db.all('SELECT * FROM stages', [], (err, rows) => {
+const query2 = "SELECT * FROM stages";
+db.all(query2, (err, rows) => {
   if (err) {
-    throw err;
+    console.log(err);
+  } else {
+    console.log(rows);
   }
-  // pass the retrieved data to your HTML or template engine for rendering
-  console.log(rows);
 });
-
-// close the database connection
-db.close();
 
 
 const express = require('express');
@@ -40,6 +39,31 @@ app.set('view engine', 'ejs')
 // Define a route handler for the default home page
 app.get('/', (req, res) => {
   res.render('index')
+});
+
+
+app.get('/lineup', (req, res) => {
+  const query = "SELECT * FROM lineup";
+  db.all(query, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      res.render('lineup', { lineup: rows });
+    }
+  });
+});
+
+app.get('/stages', (req, res) => {
+  const query2 = "SELECT * FROM stages";
+  db.all(query2, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      res.render('stages', { stages: rows });
+    }
+  });
 });
 
 // Start the server on port 5000
