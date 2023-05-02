@@ -358,23 +358,21 @@ footer {
 
 .footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-links h3 {
-  margin: 0;
-}
-
-.footer-links a {
+.footer-text a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vh;
   text-decoration: none;
   color: #fff;
-  font-size: 19px;
   transition: all 0.3s ease;
+  padding: 10px;
 }
 
-.footer-links a:hover {
-  color: #f8c900;
+.footer-text a:hover {
+  color: #00bdd0;
 }
 
 @media screen and (width >= 501px) and (max-width: 768px) {
