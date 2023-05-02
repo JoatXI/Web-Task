@@ -1,4 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
+const bodyParser = require('body-parser');
 
 // open the database
 let db = new sqlite3.Database('./mydatabase.db');
@@ -28,10 +29,10 @@ const app = express();
 const PORT = 5000
 
 // Serve static files from the public directory
-app.use(express.static('public'))
-app.use('/css', express.static(__dirname, + 'public/css'))
-app.use('/img', express.static(__dirname, + 'public/img'))
-app.use('/js', express.static(__dirname, + 'public/js'))
+app.use(express.static('public'));
+app.use('/css', express.static(__dirname, + 'public/css'));
+app.use('/img', express.static(__dirname, + 'public/img'));
+app.use('/js', express.static(__dirname, + 'public/js'));
 
 app.set('views', './views');
 app.set('view engine', 'ejs')
@@ -64,6 +65,19 @@ app.get('/stages', (req, res) => {
       res.render('stages', { stages: rows });
     }
   });
+});
+
+app.use(express.json());
+
+app.use(express.urlencoded());
+
+app.get('/', function (req, res) {
+  res.sendFile('index');
+});
+
+app.post('/',(req, res) => {
+  res.send(req.body);
+  
 });
 
 // Start the server on port 5000
