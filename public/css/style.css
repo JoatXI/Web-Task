@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .banner {
-  background-image: url(images/pitcrew.jpg);
+  background-image: url(img/images/pitcrew.jpg);
   background-position: center;
   min-height: 100%;
   display: block;
