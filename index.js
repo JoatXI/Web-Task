@@ -1,3 +1,29 @@
+const sqlite3 = require('sqlite3').verbose();
+
+// open the database
+let db = new sqlite3.Database('./mydatabase.db');
+
+// run an SQL query to retrieve the data
+db.all('SELECT * FROM lineup', [], (err, rows) => {
+  if (err) {
+    throw err;
+  }
+  // pass the retrieved data to your HTML or template engine for rendering
+  console.log(rows);
+});
+
+db.all('SELECT * FROM stages', [], (err, rows) => {
+  if (err) {
+    throw err;
+  }
+  // pass the retrieved data to your HTML or template engine for rendering
+  console.log(rows);
+});
+
+// close the database connection
+db.close();
+
+
 const express = require('express');
 const app = express();
 const PORT = 5000
